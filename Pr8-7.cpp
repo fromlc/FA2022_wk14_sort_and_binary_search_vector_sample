@@ -47,10 +47,12 @@ int main() {
     cout << "\nHere are the unsorted names:\n";
     displayNames(names);
 
+    //------------------------------------------------------------------------------
     // Sort the vector.
-    //selectionSort(names);
+    //------------------------------------------------------------------------------
+    selectionSort(names);
     // or use std::sort()
-    sort(names.begin(), names.end());
+    //sort(names.begin(), names.end());
 
     cout << "\nHere are the sorted names:\n";
     displayNames(names);
