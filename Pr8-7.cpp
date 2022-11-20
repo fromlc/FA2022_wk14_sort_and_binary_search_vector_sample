@@ -11,6 +11,7 @@
 //      - added input loop
 //      - used String .compare() instead of comparison operators
 //------------------------------------------------------------------------------
+#include <algorithm>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -20,6 +21,7 @@
 //------------------------------------------------------------------------------
 using std::cin;
 using std::cout;
+using std::sort;
 using std::string;
 using std::vector;
 
@@ -46,7 +48,9 @@ int main() {
     displayNames(names);
 
     // Sort the vector.
-    selectionSort(names);
+    //selectionSort(names);
+    // or use std::sort()
+    sort(names.begin(), names.end());
 
     cout << "\nHere are the sorted names:\n";
     displayNames(names);
